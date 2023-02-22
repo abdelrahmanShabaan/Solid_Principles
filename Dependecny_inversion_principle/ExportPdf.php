@@ -2,11 +2,12 @@
 
 
 
-class ExportPdf implements ExportInterface 
+class ExportPdf implements ExportFileInterface 
 {
 
     public function download($file)
     {
-        
+        echo "Download PDF file is done";
+
     }
 }

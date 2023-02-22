@@ -2,7 +2,7 @@
 
 
 
-interface ExportInterface 
+interface ExportFileInterface 
 {
 
     public function download($file);

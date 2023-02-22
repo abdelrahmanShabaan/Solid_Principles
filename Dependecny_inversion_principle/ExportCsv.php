@@ -2,11 +2,12 @@
 
 
 
-class ExportCsv implements ExportInterface 
+class ExportCsv implements ExportFileInterface 
 {
 
     public function download($file)
     {
         
+            echo "Download CSV file is done";
     }
 }

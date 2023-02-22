@@ -2,11 +2,21 @@
 
 
 
-class ExportFile implements ExportInterface 
+class ExportFile  
 {
 
-    public function download($file)
-    {
+        private $exportTool;
         
-    }
+        public function __construct(ExportFileInterface $export)
+        {   
+
+        $this->exportTool = $export;
+            
+        }
+
+
+        public function export($file)
+        {
+            return $this->exportTool->download($file);
+        }
 }
